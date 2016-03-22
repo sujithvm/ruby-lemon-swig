@@ -36,5 +36,6 @@ before_script:
  - gem install rake-compiler rake
 
 script:
+  - swig -c++ -ruby -I/usr/local/include ext/lemon/lemon.i 
   - rake compile
   - rake test
